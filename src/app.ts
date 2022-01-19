@@ -14,7 +14,7 @@ app.use(deserializeUser);
 
 app.listen(port, async() => {
   log.info(`App is running at http://localhost:${port}`);
-
+  log.info(port)
   await connect();
 
   routes(app);
